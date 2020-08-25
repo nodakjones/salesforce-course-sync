@@ -1,0 +1,1 @@
+<p>Out of date? <a class="button" href="options-general.php?page=salesforce-course-sync-admin&tab=courses&refresh">Click here</a> to refetch from Salesforce.</p>

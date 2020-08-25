@@ -1,0 +1,39 @@
+{
+  "name": "tagdigitalstudios/salesforce-course-sync",
+  "description": "WordPress plugin was developed specifically for the UofN Kona site to automatically pull pricing and other important information from Salesforce, and make sure it is always up to date.",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+      {
+          "name": "Tag Digital Studios",
+          "email": "support@tagstudios.io"
+      }
+  ],
+  "config": {
+      "platform": {
+          "php": "7.1"
+      }
+  },
+  "autoload": {
+    "files": ["vendor/prospress/action-scheduler/action-scheduler.php", "vendor/pippinsplugins/wp-logging/WP_Logging.php"],
+    "classmap": ["vendor/pippinsplugins/wp-logging/"]
+  },
+  "repositories": [
+      {
+          "url": "https://github.com/pippinsplugins/wp-logging.git",
+          "type": "git"
+      },
+      {
+          "url": "https://github.com/prospress/action-scheduler.git",
+          "type": "git"
+      }
+  ],
+  "require": {
+      "php": ">=7.1",
+      "pippinsplugins/wp-logging": "dev-master",
+      "developerforce/force.com-toolkit-for-php": "^1.0@dev",
+      "prospress/action-scheduler": "^2.1.1",
+      "twig/twig": "2.x-dev"
+  }
+}
